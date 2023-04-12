@@ -20,7 +20,7 @@ import org.springframework.context.annotation.Configuration;
  * @author li.hongming
  * @date 2022/3/15
  */
-@Configuration
+@Configuration(proxyBeanMethods = true)
 public class BeanAutoConfiguration {
 
     @Bean
