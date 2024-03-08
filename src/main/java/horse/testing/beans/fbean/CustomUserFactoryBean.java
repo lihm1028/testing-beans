@@ -36,6 +36,7 @@ public class CustomUserFactoryBean implements FactoryBean<UserService>, Initiali
 
     @Override
     public void afterPropertiesSet() throws Exception {
+        System.out.println("afterPropertiesSet");
         name = "afterPropertiesSet修改为";
     }
 
