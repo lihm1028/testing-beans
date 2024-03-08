@@ -3,7 +3,6 @@ package horse.testing.beans.config;
 import org.springframework.context.annotation.Condition;
 import org.springframework.context.annotation.ConditionContext;
 import org.springframework.core.type.AnnotatedTypeMetadata;
-import org.springframework.util.MultiValueMap;
 
 /**
  * @author li.hongming
@@ -17,7 +16,6 @@ public class OsCondition {
         public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
             String osName = context.getEnvironment().getProperty("os.name");
             return osName != null && osName.startsWith("Mac");
-
         }
 
     }

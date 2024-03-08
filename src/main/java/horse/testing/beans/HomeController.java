@@ -35,28 +35,33 @@ public class HomeController {
     Dog dog;
 
 
+    @Autowired
+    Desktop desktop;
+
+
     @GetMapping("/output")
     public String output() {
         Desktop bean = applicationContext.getBean(Desktop.class);
         String osName = applicationContext.getEnvironment().getProperty("os.name");
+        desktop.output(osName);
         return bean.output(osName);
     }
 
     @GetMapping("/user")
-    public Object user(){
-       return userService.getUser();
+    public Object user() {
+        return userService.getUser();
     }
 
 
     @GetMapping("/people")
-    public void people(){
+    public void people() {
         System.out.println(people);
         System.out.println(people.peopleFactory());
     }
 
     @GetMapping("/catdog")
-    public void catdog(){
-        System.out.println(cat+" "+cat.name());
-        System.out.println(dog+" "+dog.name());
+    public void catdog() {
+        System.out.println(cat + " " + cat.name());
+        System.out.println(dog + " " + dog.name());
     }
 }

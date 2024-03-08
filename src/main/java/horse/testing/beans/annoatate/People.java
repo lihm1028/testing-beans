@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 public class People {
 
     @Bean
-    public PeopleFactory peopleFactory(){
+    public PeopleFactory peopleFactory() {
         return new PeopleFactory();
     }
 }

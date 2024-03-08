@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 public class CustomBeanPostProcessor implements BeanPostProcessor {
 
 
-    public CustomBeanPostProcessor () {
+    public CustomBeanPostProcessor() {
         System.out.println("CustomBeanPostProcessor 实例化......");
     }
 
@@ -20,6 +20,7 @@ public class CustomBeanPostProcessor implements BeanPostProcessor {
      * BeanPostProcessor 主要作用就是帮助我们在bean实例化之后，初始化前后做一些事情。
      * 进行bean实例属性的填充
      * 可以进行 bean 实例的代理封装
+     *
      * @param bean
      * @param beanName
      * @return

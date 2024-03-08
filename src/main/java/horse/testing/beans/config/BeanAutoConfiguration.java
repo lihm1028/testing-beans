@@ -14,9 +14,10 @@ import org.springframework.context.annotation.Configuration;
  * 4.手动注册方式 @Import @Import中可以写多个class
  * 5.快速注册方式
  * 6.批量注册方式  可以在@Import注解中添加一个ImportSelector类以实现批量注册的功能
- *
- *
+ * <p>
+ * <p>
  * https://zhuanlan.zhihu.com/p/59307885
+ *
  * @author li.hongming
  * @date 2022/3/15
  */
@@ -39,6 +40,7 @@ public class BeanAutoConfiguration {
     /**
      * 自定义注册Bean
      * 可以指定初始化方法initMethod
+     *
      * @return
      */
     @Bean(initMethod = "init")

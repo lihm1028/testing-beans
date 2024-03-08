@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration(proxyBeanMethods = true)
 public class Animal {
     @Bean
-    public Animal smallAnimal(){
+    public Animal smallAnimal() {
         return new Animal();
     }
 

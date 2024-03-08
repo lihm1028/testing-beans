@@ -17,7 +17,7 @@ import java.time.Duration;
 @Slf4j
 public class CustSpringApplicationRunListener implements SpringApplicationRunListener {
 
-    public CustSpringApplicationRunListener(SpringApplication application,String[] args) {
+    public CustSpringApplicationRunListener(SpringApplication application, String[] args) {
     }
 
     @Override

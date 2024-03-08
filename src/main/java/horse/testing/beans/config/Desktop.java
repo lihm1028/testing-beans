@@ -8,7 +8,7 @@ public interface Desktop {
 
     String output(String input);
 
-    static class MacDesktop implements Desktop {
+    class MacDesktop implements Desktop {
 
         @Override
         public String output(String input) {
@@ -18,7 +18,7 @@ public interface Desktop {
         }
     }
 
-    public static class WindowDesktop implements Desktop {
+    class WindowDesktop implements Desktop {
 
         @Override
         public String output(String input) {

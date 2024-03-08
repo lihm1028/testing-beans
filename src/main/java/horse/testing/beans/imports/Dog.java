@@ -5,7 +5,7 @@ package horse.testing.beans.imports;
  * @date 2023/4/12
  */
 public class Dog {
-    public String name(){
+    public String name() {
         return "dog";
     }
 }

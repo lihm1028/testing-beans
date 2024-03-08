@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 /**
  * SmartLifecycle是对Lifecycle的一个扩展接口
  * 自动智能的管理生命周期
- *
+ * <p>
  * 需要根据Spring容器的生命周期，来做一些自己的逻辑时，
  * 一般都会选择自定义一个类，实现SmartLifecycle这个接口。
  *

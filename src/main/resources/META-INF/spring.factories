@@ -1,5 +1,2 @@
 org.springframework.context.ApplicationContextInitializer=horse.testing.beans.Initializers.CustApplicationContextInitializer
-
-
-
 org.springframework.boot.SpringApplicationRunListener=horse.testing.beans.runListeners.CustSpringApplicationRunListener
