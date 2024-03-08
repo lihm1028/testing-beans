@@ -18,7 +18,6 @@ public class BeansApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext run = new SpringApplicationBuilder(BeansApplication.class).run(args);
 
-
         //测试@Configuration注入的bean是不是同一个对象
         Animal animal = run.getBean("animal", Animal.class);
         System.out.println(animal);
