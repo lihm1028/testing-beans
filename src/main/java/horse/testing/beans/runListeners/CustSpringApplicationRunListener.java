@@ -31,7 +31,6 @@ public class CustSpringApplicationRunListener implements SpringApplicationRunLis
         log.info("environmentPrepared 当environment构建完成，ApplicationContext创建之前，该方法被调用");
     }
 
-
     @Override
     public void contextPrepared(ConfigurableApplicationContext context) {
         log.info("contextPrepared 当ApplicationContext构建完成时，该方法被调用");
